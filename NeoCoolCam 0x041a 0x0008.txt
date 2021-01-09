@@ -1,0 +1,41 @@
+Jeedom
+sudo vi /var/www/html/plugins/openzwave/resources/openzwaved/config/manufacturer_specific.xml
+sudo cp 271.2817.4098_fgfs101zw5.flood.sensor.json 271.2817.4099_fgfs101zw5.flood.sensor.json
+sudo cp 271.2817.4098_fgfs101zw5.flood.sensor.jpg 271.2817.4099_fgfs101zw5.flood.sensor.jpg
+
+Fibaro FGDW-002 Door Sensor 2 > Ne fonctionne pas pour détecter l'état de la porte de garage (la structure métallique biaise le résultat, ou bien le système anti-sabotage)
+
+
+Issue:
+Fabricant : Unknown: id=041a
+Identifiant du fabricant : 1050 [0x041a] Type de produit : 512 [0x0200] Identifiant du produit : 8 [0x0008]
+
+sudo nano /var/www/html/plugins/openzwave/resources/openzwaved/config/manufacturer_specific.xml
+
+Extract of existing Neo CoolCam Power Plug:
+        <Manufacturer id="0258" name="Neo CoolCam">
+                <Product type="0003" id="0082" name="Door/Window Detector" config="shenzen_neo/nas-ds01z.xml"/>
+                <Product type="0003" id="1082" name="Door/Window Detector" config="shenzen_neo/nas-ds01z.xml"/>
+                <Product type="0003" id="0087" name="Power plug 12A" config="shenzen_neo/nas-wr01z.xml"/>
+                <Product type="0003" id="1087" name="Power plug 12A" config="shenzen_neo/nas-wr01z.xml"/>
+                <Product type="0200" id="1027" name="Power plug 12A" config="shenzen_neo/nas-wr01z-v2.xml"/>
+                <Product type="0003" id="0083" name="Battery Powered PIR Sensor" config="shenzen_neo/nas-pd01z.xml"/>
+                <Product type="0003" id="1083" name="Battery Powered PIR Sensor" config="shenzen_neo/nas-pd01z.xml"/>
+                <Product type="0003" id="0085" name="Water Leakage Detector" config="shenzen_neo/nas-ws02z.xml"/>
+                <Product type="0003" id="1085" name="Water Leakage Detector" config="shenzen_neo/nas-ws02z.xml"/>
+                <Product type="0003" id="6085" name="Water Leakage Detector" config="shenzen_neo/nas-ws02z.xml"/>
+                <Product type="0003" id="0088" name="Siren Alarm" config="shenzen_neo/nas-ab01z.xml"/>
+                <Product type="0003" id="1088" name="Siren Alarm" config="shenzen_neo/nas-ab01z.xml"/>
+                <Product type="0003" id="008a" name="SOS/Remote Control" config="shenzen_neo/nas-rc01z.xml"/>
+                <Product type="0003" id="108a" name="SOS/Remote Control" config="shenzen_neo/nas-rc01z.xml"/>
+                <Product type="0003" id="008b" name="Wall Switch (2 channels)" config="shenzen_neo/ls02ch.xml"/>
+                <Product type="0003" id="108b" name="Wall Switch (2 channels)" config="shenzen_neo/ls02ch.xml"/>
+                <Product type="0003" id="008c" name="Wall Switch (1 channel)" config="shenzen_neo/ls01ch.xml"/>
+                <Product type="0003" id="108c" name="Wall Switch (1 channel)" config="shenzen_neo/ls01ch.xml"/>
+                <Product type="0003" id="108d" name="Battery Powered PIR Sensor" config="shenzen_neo/nas-pd01zt.xml"/>
+        </Manufacturer>
+
+Add of the following node:
+        <Manufacturer id="041a" name="Neo CoolCam">
+                <Product type="0200" id="0008" name="Power plug 12A" config="shenzen_neo/nas-wr01z-v2.xml"/>
+        </Manufacturer>
