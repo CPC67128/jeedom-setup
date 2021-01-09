@@ -1,12 +1,4 @@
-Jeedom
-sudo vi /var/www/html/plugins/openzwave/resources/openzwaved/config/manufacturer_specific.xml
-sudo cp 271.2817.4098_fgfs101zw5.flood.sensor.json 271.2817.4099_fgfs101zw5.flood.sensor.json
-sudo cp 271.2817.4098_fgfs101zw5.flood.sensor.jpg 271.2817.4099_fgfs101zw5.flood.sensor.jpg
-
-Fibaro FGDW-002 Door Sensor 2 > Ne fonctionne pas pour détecter l'état de la porte de garage (la structure métallique biaise le résultat, ou bien le système anti-sabotage)
-
-
-Issue:
+Issue: Unknown Neo CoolCam Power Plug
 Fabricant : Unknown: id=041a
 Identifiant du fabricant : 1050 [0x041a] Type de produit : 512 [0x0200] Identifiant du produit : 8 [0x0008]
 
@@ -39,3 +31,8 @@ Add of the following node:
         <Manufacturer id="041a" name="Neo CoolCam">
                 <Product type="0200" id="0008" name="Power plug 12A" config="shenzen_neo/nas-wr01z-v2.xml"/>
         </Manufacturer>
+
+---
+
+$ cd /var/www/html/plugins/openzwave/core/config/devices
+$ find . -name *600.512.*
