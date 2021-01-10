@@ -12,4 +12,4 @@ Manufacturer Id : 1050 [0x041a] Product Type : 512 [0x0200] Product Id : 8 [0x00
 
 ### Unknown Fibaro Flood Sensor
 
-[Fibaro FGDW-002 Door Sensor 2.txt.txt](./Fibaro%20FGDW-002%20Door%20Sensor%202.txt)
+[Fibaro FGDW-002 Door Sensor 2.txt](./Fibaro%20FGDW-002%20Door%20Sensor%202.txt)
