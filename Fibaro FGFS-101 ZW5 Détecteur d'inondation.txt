@@ -1,0 +1,3 @@
+sudo vi /var/www/html/plugins/openzwave/resources/openzwaved/config/manufacturer_specific.xml > Ajouter une ligne en se basant sur une autre entrée équivalente
+sudo cp 271.2817.4098_fgfs101zw5.flood.sensor.json 271.2817.4099_fgfs101zw5.flood.sensor.json
+sudo cp 271.2817.4098_fgfs101zw5.flood.sensor.jpg 271.2817.4099_fgfs101zw5.flood.sensor.jpg
