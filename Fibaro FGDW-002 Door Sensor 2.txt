@@ -1,0 +1,1 @@
+Fibaro FGDW-002 Door Sensor 2 > Ne fonctionne pas pour détecter l'état de la porte de garage (la structure métallique sûrement, ou bien le système anti-sabotage)
