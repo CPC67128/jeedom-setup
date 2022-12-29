@@ -35,13 +35,18 @@ Add of the following node:
 ---
 
 $ cd /var/www/html/plugins/openzwave/core/config/devices
+
 $ find . -name *600.512.*
+
 ./neocoolcam_600/600.512.4140_nas.sc03ze.json
 ./neocoolcam_600/600.512.4135_nas.wr01ze.power.plug.jpg
 ./neocoolcam_600/600.512.4140_nas.sc03ze.jpg
 ./neocoolcam_600/600.512.4135_nas.wr01ze.power.plug.json
+
 $ sudo mkdir neocoolcam_1050
+
 $ sudo cp neocoolcam_600/600.512.4135_nas.wr01ze.power.plug.jpg neocoolcam_1050/1050.512.8_nas.wr01ze.power.plug.jpg
+
 $ sudo cp neocoolcam_600/600.512.4135_nas.wr01ze.power.plug.json neocoolcam_1050/1050.512.8_nas.wr01ze.power.plug.json
 
 ---
